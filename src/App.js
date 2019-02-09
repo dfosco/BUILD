@@ -1,23 +1,13 @@
-import React, { Component } from 'react';
+import React, { Fragment, Component } from 'react';
+import Viewer from './viewer';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Viewer>
+        <div className="bg-blue">.</div>
+        <div className="bg-red">.</div>
+      </Viewer>
     );
   }
 }
